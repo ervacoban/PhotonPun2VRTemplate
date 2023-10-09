@@ -10,7 +10,7 @@ namespace PhotonPun2VRTemplate.Network.Scene
         
         public void SpawnNetworkObject()
         {
-            var spawnedObject = PhotonNetwork.Instantiate(networkObjectPrefab.name, spawnPoint.position, spawnPoint.rotation);
+            PhotonNetwork.Instantiate(networkObjectPrefab.name, spawnPoint.position, spawnPoint.rotation);
         }
     }
 }
